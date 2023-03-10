@@ -1,0 +1,43 @@
+{% include 'header.html' %}
+    {% for document in documents %}
+
+        <form action="/update" method="post" enctype="multipart/form-data">
+
+            Id:
+            <input type="number" value="{{ document[0] }}" name="txtID" id="txtID">
+            <br>
+            Usuaio:
+            <input type="number" value="{{ document[1] }}" name="txtUser" id="txtUser">
+            <br>
+            Creador:
+            <input type="text" value="{{ document[2] }}" name="txtCreator" id="txtCreator">
+            <br>
+            Autor:
+            <input type="text"  value="{{ document[3] }}" name="txtAutor" id="txtAutor">
+            <br>
+            Producido:
+            <input type="text" value="{{ document[4] }}" name="txtProducer" id="txtProducer">
+            <br>
+            Producido:
+            <input type="text" value="{{ document[5] }}" name="txtTitle" id="txtTitle">
+            <br>
+            Fecha de Creacion:
+            <input type="date" value="{{ document[6] }}" name="txtCreation_Date" id="txtCreation_Date">
+            <br>
+            Fecha de Modificacion:
+            <input type="date" value="{{ document[7] }}" name="txtModification_Date" id="txtModification_Date">
+            <br>
+            Ultima Fecha:
+            <input type="date" value="{{ document[8] }}" name="txtLast_Date" id="txtLast_Date">
+            <br>
+            Foto:
+            {{ document[9] }}
+            <input type="file" name="txtLast_Date" id="txtLast_Date">
+            <br>
+            <br>
+            <input type="submit" value="Agregar">
+        
+        </form>
+        
+    {% endfor %}
+{% include 'footer.html' %}

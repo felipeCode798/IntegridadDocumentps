@@ -1,0 +1,43 @@
+    {% include 'header.html' %}
+    {% include 'menu.html' %}
+        <div class="col flex-column">
+            <div class="d-flex flex-shrink-0 ptop-75 pletf-10">
+                <h2>Registro</h2>
+                <a class="btn-plus" href="{{url_for("create")}}">
+                    +
+                </a>
+            </div>
+            <div class="pletf-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Documentos</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Resultado</th>
+                            <th scope="col">Accion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for document in documents %}
+                            <tr>
+                                <th scope="row">{{ document[0] }}</th>
+                                <td>{{ document[1] }}</td>
+                                <td>{{ document[7] }}</td>
+                                <td>{{ document[8] }}</td>
+                                <td>{{ document[9] }}</td>
+                                <th scope="row">
+                                    <a href="/edit/{{ document[0] }}">Ver</a>
+                                    |
+                                    <a href="/destroy/{{ document[0] }}">Borrar</a>
+                                    
+                                </th>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    {% include 'footer.html' %}

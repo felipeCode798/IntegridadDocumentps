@@ -1,0 +1,69 @@
+{% include 'header.html' %}
+{% include 'menu.html' %}
+
+    <div class="col flex-column">
+        <div class="d-flex flex-shrink-0 ptop-75 pletf-10">
+            <h2>Registro</h2>
+            <a class="btn-plus">
+                +
+            </a>
+        </div>
+        <div class="d-flex flex-row mb-3">
+            <div class="pletf-10">
+                <div class="frm-pefil">
+                    <div class="boximg"></div>
+                    <div class="boxcamera"></div>
+                    <form class="form-peson" action="/store" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="txtName" name="txtName" placeholder="Nombre Completo...">
+                        </div>
+                        <div class="d-flex flex-row mb-3">
+                            <select class="form-control w-40 m-6"  id="txtType" name="txtType">
+                                <option value="value1">Tipo</option>
+                                <option value="value2">Cedula</option>
+                                <option value="value2">Cedula de extrajeria</option>
+                            </select>
+                            <input type="number" class="form-control" id="txtDni" name="txtDni" placeholder="Numero de identificacion">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="numer" class="form-control" id="txtPhone" name="txtPhone" placeholder="Telefono">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="txtAddress" name="txtAddress" placeholder="Direccion">
+                        </div>
+                        <div class="form-peson-2">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="txtProduct" name="txtProduct" placeholder="Producto">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="txtService" name="txtService" placeholder="Servicios">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" id="txtCity" name="txtCity" placeholder="Ciudad">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" id="txtInvestigator" name="txtInvestigator" placeholder="Nombre del investigador">
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" class="form-control" id="txtValor" name="txtValor" placeholder="Valor Solicitado ">
+                            </div>
+                        </div>
+                        <div class="form-peson-3">
+                            <div class="mb-3">
+                                <input type="file" class="form-control" id="txtDocument" name="txtDocument" placeholder="Subir Documento">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="pletf-10">
+                <div class="frm-document"></div>
+            </div>
+        </div>
+    </div>
+
+{% include 'footer.html' %}

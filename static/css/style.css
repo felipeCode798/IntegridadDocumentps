@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+body{
+    background: #DCE5F7;
+}
+
+.title{
+    font-family: 'Almarai', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+
+.lista{
+    font-family: 'Almarai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.menu{
+    position: absolute;
+    width: 258px;
+    height: 100vh;
+    left: 32px;
+    top: 26px;
+    background: #1E2959;
+    border-radius: 62px;
+}
+
+.ptop-75{
+    padding-top: 75px;
+}
+
+.pletf-10{
+    padding-left: 10px;
+}
+
+.btn-plus{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 9px;
+    text-align: center;
+    background: #5AE1F8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.frm-pefil{
+    width: 258px;
+    height: 80vh;
+    left: 32px;
+    top: 26px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+}
+
+.frm-document{
+    width: 90vh;
+    height: 80vh;
+    left: 614px;
+    top: 127px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 64px;
+}
+
+.boximg{
+    box-sizing: border-box;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 349px;
+    top: 131px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid #1E2959;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxcamera{
+    box-sizing: border-box;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 449px;
+    top: 226px;
+    border-radius: 100%;
+    background: #1E2959;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-peson{
+    position: absolute;
+    left: 310px;
+    top: 282px;
+    width: 236px;
+}
+
+.w-15{
+    width: 15px;
+}
+
+.w-40{
+    width: 40px;
+}
+
+.m-6{
+    margin-right: 6px;
+}
+
+.form-peson-2{
+    position: absolute;
+    left: 274px;
+    top: -57px;
+    width: 240px;
+}
+
+.form-peson-3{
+    position: absolute;
+    left: 535px;
+    top: -57px;
+    width: 248px;
+    height: 82%;
+    border: 1px solid #d9d7d7;
+    border-radius: 10px
+}
